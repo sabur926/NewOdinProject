@@ -1,0 +1,63 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+nav{
+    display: inline-block;
+   
+}
+
+.top{
+    font-weight: 800;
+    text-align: center;
+    font-size: larger;
+
+.top.toptee{
+    color: orange;
+}
+ul{
+     text-decoration: none;
+}
+body{
+    background-color: antiquewhite;
+    color: black;
+    font-family: ;
+    font-size: ;
+    font-weight: ;
+    font-style: ;
+    text-align: ;
+    box-sizing: ;
+
+}
+
+img{
+    height:auto ;
+    width: 800px;
+}
+h1{
+
+}
+
+nav{
+
+}
+
+p{font-weight: 600;
+text-align: center;
+
+
+}
+
+
+}
+div{
+
+}
+
+:hover{
+    color: orange;
+}

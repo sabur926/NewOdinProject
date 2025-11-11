@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: orange;
+}
+.flex-container {
+    display: flex;
+    margin: 20px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 900;
+    list-style-type: none;
+}
+
+.item{
+    flex: auto;
+    text-decoration: underline;
+    color: rgba(29, 12, 1, 0.911);
+}
+.top{
+    color: rgba(97, 41, 4, 0.911);
+}
+
+.top{
+    text-align: center;
+    font-size: 6rem;
+}
+
+.topin{
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgba(29, 12, 1, 0.911);
+}
+
+.topas{
+    background-color: blanchedalmond;
+}
+
+#toptee{
+    color: orange;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.topak{
+    background-image: url("pictures/marry-me-chicken-lead-67a503f26dff1.avif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+    margin-bottom: 2rem;
+}
+
+.container{
+    display: flex;
+    margin: 1rem;
+    width: 700px;
+    justify-content: space-around;
+
+}
+
+.items{
+    border-radius: 3rem;
+    list-style-type: none;
+    height:400px;
+    width: 300px;
+}
