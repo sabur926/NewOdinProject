@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: orange;
+}
+.flex-container {
+    display: flex;
+    margin: 20px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 900;
+    list-style-type: none;
+}
+a:hover{
+color: bisque;
+}
+
+.item{
+    flex: auto;
+    text-decoration: underline;
+    color: rgba(29, 12, 1, 0.911);
+}
+.top{
+    color: rgba(97, 41, 4, 0.911);
+}
+
+.top{
+    text-align: center;
+    font-size: 6rem;
+}
+
+.topin{
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgba(29, 12, 1, 0.911);
+}
+
+.topas{
+    background-color: blanchedalmond;
+}
+
+#toptee{
+    color: orange;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    border: 2px solid orange;
+    row-gap: 3rem;
+}
+
+.subsectiona{
+    flex: 1;
+    border: 2px solid red;
+}
+
+
+.subsectionb{
+    flex: 1;
+    /*border: 2px solid blue;*/
+    padding: 2rem;
+    margin: 3rem;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 5rem;
+    padding: 3rem;
+    background-color: rgba(207, 201, 201, 0.61);
+    border-radius: 20px;
+    color: rgb(151, 105, 34);
+    font-size: 1.25rem;
+}
+
+*{
+    /*border: 2px solid rgb(102, 255, 0);*/
+}
+
+.above{
+    display: flex;
+    flex-wrap: wrap;
+    /*border: 2px solid rgb(0, 255, 255);*/
+    margin: 2rem;
+    row-gap: 3rem;
+    column-gap: 4rem;
+    border-radius: 20px;
+
+}
+.aboveleft{
+    flex: 1;
+    /*border: 2px solid rgb(255, 0, 149);*/
+    border-radius: 20px;
+    width: 400px;
+    height: min-content;
+}
+.aboveleft img{
+    border-radius: 20px;
+    
+}
+.aboveright{
+    flex: 1;
+    /*border: 2px solid rgb(255, 166, 0);*/
+    background-color: rgb(235, 229, 222);
+    border-radius: 20px;
+}
+
+.aboverightbtn{
+background-color: rgb(124, 235, 121);
+color: rgb(114, 70, 3);
+border-radius: 30px;
+margin: 1rem;
+padding: 5px;
+font-size: 18px;
+}
+
+.btnitaly{
+background-color: white;
+color: rgb(114, 70, 3);
+border-radius: 30px;
+margin: 1rem;
+padding: 5px;
+font-size: 18px;
+}
+
+.aboverighttop{
+    flex: 1;
+    /*border: 2px solid rgb(255, 0, 0);*/
+    color: rgb(114, 70, 3);
+}
+
+.aboverighttop p{
+    font-size: 1.5rem;
+}
+
+.aboverightsmaller{
+    display: flex;
+    gap: 2rem;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.aboverightbtm{
+    flex: 1;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 5rem;
+    padding: 3rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    color: rgb(253, 174, 56);
+
+}
