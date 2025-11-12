@@ -57,13 +57,13 @@ color: bisque;
     flex-direction: column;
     margin: 2rem;
     padding: 2rem;
-    border: 2px solid orange;
+    /*border: 2px solid orange;*/
     row-gap: 3rem;
 }
 
 .subsectiona{
     flex: 1;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 
 
@@ -72,7 +72,7 @@ color: bisque;
     /*border: 2px solid blue;*/
     padding: 2rem;
     margin: 3rem;
-    border: 2px solid rgb(255, 255, 255);
+    /*border: 2px solid rgb(255, 255, 255);*/
     margin-top: 5rem;
     padding: 3rem;
     background-color: rgba(207, 201, 201, 0.61);
