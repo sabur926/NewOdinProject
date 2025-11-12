@@ -64,15 +64,17 @@ h1{
     margin: 1.5rem;
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: space-around;
-    align-items: center;*/
+    /*border: 2px solid orange;*/
+    row-gap:10px;
+    column-gap: 5px;
+    align-items: center;
 }
 
 
 .container .one, .two, .three, .four, .five, .six{
     flex: 1, 1, 0;
     margin: 2rem;
-    padding: 3rem;
+    padding: 2rem;
     border: 0.25px;
     border-style: solid;
     border-color: rgb(134, 77, 6);
@@ -81,6 +83,16 @@ h1{
     width: min-content;
     height: min-content;
     border-radius: 20px;
+    /*flex-grow: 1;
+    flex-shrink: 2;*/
+}
+
+a:visited{
+    
+}
+
+a:hover {
+    color: bisque;
 }
 
 .container .one .ola{
@@ -94,6 +106,8 @@ h1{
 }
 .container .one .alpha img{
     border-radius: 15px;
+    width: 300px;
+    height: 300px;
 }
 
 .container .one .taskforce #front{
@@ -112,7 +126,10 @@ h1{
 }
 .container .two .alpha img{
     border-radius: 15px;
+    width: 300px;
+    height: 300px;
 }
+
 .container .two .taskforce #front{
     font-size: 1.5rem;
     font-weight: 900;
@@ -128,6 +145,8 @@ h1{
 }
 .container .three .alpha img{
     border-radius: 15px;
+    width: 300px;
+    height: 300px;
 }
 
 .container .three .taskforce #front{
@@ -145,6 +164,8 @@ h1{
 }
 .container .four .alpha img{
     border-radius: 15px;
+    width: 300px;
+    height: 300px;
 }
 
 .container .four .taskforce #front{
@@ -162,6 +183,8 @@ h1{
 }
 .container .five .alpha img{
     border-radius: 15px;
+    width: 300px;
+    height: 300px;
 }
 
 .container .five .taskforce #front{
@@ -179,9 +202,12 @@ h1{
 }
 .container .six .alpha img{
     border-radius: 15px;
+    width: 300px;
+    height: 300px;
 }
 
 .container .six .taskforce #front{
     font-size: 1.5rem;
     font-weight: 900;
 }
+
