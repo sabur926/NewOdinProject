@@ -60,16 +60,128 @@ h1{
 }
 
 .container{
+    padding: 1rem;
+    margin: 1.5rem;
     display: flex;
-    margin: 1rem;
-    width: 700px;
-    justify-content: space-around;
-
+    flex-wrap: wrap;
+    /*justify-content: space-around;
+    align-items: center;*/
 }
 
-.items{
-    border-radius: 3rem;
+
+.container .one, .two, .three, .four, .five, .six{
+    flex: 1, 1, 0;
+    margin: 2rem;
+    padding: 3rem;
+    border: 0.25px;
+    border-style: solid;
+    border-color: rgb(134, 77, 6);
+    background-color: rgb(255, 255, 255);
     list-style-type: none;
-    height:400px;
-    width: 300px;
+    width: min-content;
+    height: min-content;
+    border-radius: 20px;
+}
+
+.container .one .ola{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .one .alpha{
+    border-radius: 15px;
+    width: fit-content;
+}
+.container .one .alpha img{
+    border-radius: 15px;
+}
+
+.container .one .taskforce #front{
+    font-size: 1.5rem;
+    font-weight: 900;
+    list-style-type:none;
+}
+
+.container .two .ola{
+    display: flex;
+    justify-content: space-around;
+}
+.container .two .alpha{
+    border-radius: 15px;
+    width: fit-content;
+}
+.container .two .alpha img{
+    border-radius: 15px;
+}
+.container .two .taskforce #front{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.container .three .ola{
+    display: flex;
+    justify-content: space-around;
+}
+.container .three .alpha{
+    border-radius: 15px;
+    width: fit-content;
+}
+.container .three .alpha img{
+    border-radius: 15px;
+}
+
+.container .three .taskforce #front{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.container .four .ola{
+    display: flex;
+    justify-content: space-around;
+}
+.container .four .alpha{
+    border-radius: 15px;
+    width: fit-content;
+}
+.container .four .alpha img{
+    border-radius: 15px;
+}
+
+.container .four .taskforce #front{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.container .five .ola{
+    display: flex;
+    justify-content: space-around;
+}
+.container .five .alpha{
+    border-radius: 15px;
+    width: fit-content;
+}
+.container .five .alpha img{
+    border-radius: 15px;
+}
+
+.container .five .taskforce #front{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.container .six .ola{
+    display: flex;
+    justify-content: space-around;
+}
+.container .six .alpha{
+    border-radius: 15px;
+    width: fit-content;
+}
+.container .six .alpha img{
+    border-radius: 15px;
+}
+
+.container .six .taskforce #front{
+    font-size: 1.5rem;
+    font-weight: 900;
 }
