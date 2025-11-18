@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            color: aqua;
+            text-align: left;
+        }
+
+        #container{
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            /*width: 400px;*/
+            /*height: 300px;*/
+            border: 4px sold red;
+            justify-content: space-between;
+        }
+
+        .collaterised{
+            
+            border: 4px solid yellowgreen;
+            justify-content: space-between;
+            /*align-items: flex-start; 
+            list-style-type: none;
+            width: 350px;
+            height: 400px;*/
+            margin: 0.8rem;
+            padding:4px;
+        }
+
+        .collaterised #ader{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            min-height: fit-content;
+            
+            
+        }
+
+        .collaterised #ader .item{
+            border: 2px solid white;
+            flex: 1;
+            height:50px;
+            color: rgb(24, 10, 223);
+            padding: 10px;
+            margin: 10px;   
+        }
+
+         .collaterised #ader .items{
+            border: 2px solid white;
+            flex-grow: 0;
+            height:50px;
+            color: rgb(24, 10, 223);
+            padding: 10px;
+            margin: 10px;   
+        }
+     </style>
+</head>
+
+<body>
+   
+    <h1>January</h1>
+    <button id="btn">Click Me</button>
+    <div id="container">
+        <div class="collaterised">
+            <ul id="ader">
+                <li class="item">01</li>
+                <li class="item">02</li>
+                <li class="item">03</li>
+                <li class="item">04</li>
+                <li class="item">05</li>
+                <li class="item">06</li>
+                <li class="item">07</li>
+                <li class="item">08</li>
+                <li class="item">09</li>
+                <li class="item">10</li>
+                <li class="item">11</li>
+                <li class="item">12</li>
+                <li class="item">13</li>
+                <li class="item">14</li>
+                <li class="item">15</li>
+                <li class="item">16</li>
+                <li class="item">17</li>
+                <li class="item">18</li>
+                <li class="item">19</li>
+                <li class="item">20</li>
+                <li class="item">21</li>
+                <li class="item">22</li>
+                <li class="item">23</li>
+                <li class="item">24</li>
+                <li class="item">25</li>
+                <li class="item">26</li>
+                <li class="item">27</li>
+                <li class="item">28</li>
+                <li class="item">29</li>
+                <li class="item">30</li>
+                <li class="items">31</li>
+                
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+
+        
+        const container = document.querySelector("#container");
+        const content = document.createElement("div");
+        content.classList.add("content");
+        content.textContent = "this is a new div child";
+
+        container.appendChild(content);
+        
+        const content1 = document.createElement("div");
+        content1.classList.add("content1");
+        content1.textContent = "i am updating this div";
+        container.appendChild(content1);
+
+
+        const content2 =document.createElement ("div");
+        content2.classList.add("content2");
+        content2.textContent = "this ts the third child div created";
+        container.appendChild(content2);
+
+        console.log(content);
+        
+        content.style.cssText = "color: green; border: 6px solid blue; background: red; padding:3px; margin: 0.4rem;"
+        //content.style["text-align"]; "left";
+        //content.style["background-color"]; "red";
+
+        content1.setAttribute("style","color: white; border: 6px solid red; background: green; padding:3px; margin: 0.4rem;");
+        //content1.style["textAlign"]; "center";
+        //content1.style["background-color"]; "blue";
+
+        content2.style.cssText = "color: white; border: 6px solid red; background: blue; padding:3px; margin: 0.4rem;"
+        //content2.style["text-align"]; "right";
+        //content2.style["background-color"]; "yellow";
+
+        const pc =document.createElement("pc");
+        pc.classList.add("pcontainer");
+        pc.textContent ="Hey i'm red!"
+        container.appendChild(pc);
+
+        const h3 = document.createElement("h3");
+        h3.textContent = "I'm a blue h3!";
+        container.appendChild(h3);
+
+
+
+        const content4 =document.createElement("div");
+        content4.classList.add("content4");
+        content4.textContent = "A new div with pink background color,nesting both h1 and p elements";
+        container.appendChild(content4);
+        content4.style.cssText = "border:6px solid black; color:blue;background:pink; padding:3px; margin: 0.4rem;"
+        //content4.style["background-color"]; "pink";
+        
+
+        const h1 = document.createElement("h1");
+        h1.textContent ="i'm in a div";
+        content4.appendChild(h1);
+
+        const p = document.createElement("p");
+        p.textContent = "ME TOO!";
+        content4.appendChild(p);
+        
+
+        const btn = document.querySelector("#btn");
+        btn.addEventListener("click", () => {
+            alert("hello world");
+            console.log("you are blessed");
+        });
+
+
+        
+
+        
+
+
+    </script>
+</body>
+</html>

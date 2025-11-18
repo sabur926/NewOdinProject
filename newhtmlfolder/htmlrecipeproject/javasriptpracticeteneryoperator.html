@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            html {
+        font-family: sans-serif;
+        }
+
+        * {
+        box-sizing: border-box;
+        }
+
+        h2 {
+        font-size: 16px;
+        }
+
+        label {
+        margin: 0;
+        text-align: right;
+        font-size: 0.7rem;
+        width: 98%;
+        }
+
+        body {
+        margin: 10px;
+        background: #f5f9fa;
+        }
+
+        
+        ul {
+        padding-left: 0;
+        }
+
+        li {
+        display: block;
+        float: left;
+        width: 25%;
+        border: 2px solid white;
+        padding: 5px;
+        height: 40px;
+        background-color: #4a2db6;
+        color: white;
+        }
+    </style>
+</head>
+<body>
+   <!--<label for="theme">Select theme</label> -->
+     <!--<select name="upper" id="theme">Select theme -->
+       <!--  <option value="white">White</option> -->
+        <!-- <option value="black">Black</option> -->
+     <!--</select>-->
+
+
+
+    <label for="months">Select Months</label>
+    <select name="updatesMonths" id="months">Select Months
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+        <option value="september">September</option>
+        <option value="november">November</option>
+        <option value="december">December</option>
+    </select>
+
+    <h1></h1>
+
+    <ul></ul>
+    <p></p>
+    
+    <script>
+        //const select =document.querySelector("select");
+        //const html = document.querySelector("html");
+        //document.body.style.padding = "10px";
+
+        //function update (bgColor, textColor){
+          //  html.style.backgroundColor = bgColor;
+            //html.style.color = textColor;
+        //}
+
+        //select.addEventListener("change", ()=> select.value ==="black" ? update("black","white"):update("white","black"),);
+
+
+        const select = document.querySelector("select");
+        const h1 = document.querySelector ("h1");
+        const para = document.querySelector("p");
+        h1.textContent = months;
+        const ul = document.querySelector("ul");
+        const li = document.createElement("li");
+        
+        let days = 31;
+        for (let i = 1; i <= days; i++);
+        li.textContent = i;
+        ul.textContent = li;
+        ul.appendChild(li);
+        const choice = select.value;
+        select.addEventListener("change", createCalender);
+        //let 31 days = january,march, may, july, august, october, december
+        //const dayLength = for(let i = 1; i <= 31; i++){
+          //              console.log(i);
+            //            }
+        //let 30 days = september, april, june and november
+        //const dayLength1 = for(let i = 1; i <= 30; i++){
+        //                console.log(i);
+          //              }
+        //let 28 days = february.
+        //const dayLength2 = for(let i = 1; i <= 30; i++){
+          //              console.log(i);
+            //            }
+        function createCalender(months){
+            switch (choice){
+                case "january":
+                    para.textContent = "Print January calender";
+                    for (let i = 1; i <= 31; i++);
+                    li.textContent = "i";
+                    ul.textContent = "";
+                    break;
+                case "february":
+                    para.textContent = "Print February calender";
+                    for (let i = 1; i <= 28; i++);
+                    li.textContent = "i";
+                    ul.textContent = "";
+                    break;
+                 case "march":
+                    para.textContent = "Print March calender";
+                    for (let i = 1; i <= 31; i++);
+                    li.textContent = "i";
+                    ul.textContent = "";
+                    break;
+                 case "april":
+                    para.textContent = "Print April calender";
+                    for (let i = 1; i <= 30; i++);
+                    li.textContent = "i";
+                    ul.textContent = "";
+                    break;
+                 case "may":
+                    para.textContent = "Print May calender";
+                    for (let i = 1; i <= 31; i++);
+                    li.textContent = "i";
+                    ul.textContent = "";
+                    break;
+                 case "june":
+                    para.textContent = "Print June calender";
+                    for (let i = 1; i <= 30; i++);
+                    li.textContent = "i";
+                    ul.textContent = "";
+                    break;
+                 case "july":
+                    para.textContent = "Print July calender";
+                    for (let i = 1; i <= 31; i++);
+                    li.textContent = "i";
+                    ul.textContent = "";
+                    break;
+                 case "august":
+                    para.textContent = "Print August calender";
+                    for (let i = 1; i <= 31; i++);
+                    li.textContent = "i";
+                    ul.textContent = "";
+                    break;
+                 case "september":
+                    para.textContent = "Print September calender";
+                    for (let i = 1; i <= 30; i++);
+                    li.textContent = "i";
+                    ul.textContent = "";
+                    break;
+                 case "october":
+                    para.textContent = "Print October calender";
+                    for (let i = 1; i <= 31; i++);
+                    li.textContent = "i";
+                    ul.textContent = "";
+                    break;
+                 case "november":
+                    para.textContent = "Print November calender";
+                    for (let i = 1; i <= 30; i++);
+                    li.textContent = "i";
+                    ul.textContent = "";
+                    break;
+                 case "december":
+                    para.textContent = "Print December calender";
+                    for (let i = 1; i <= 31; i++);
+                    li.textContent = "i";
+                    ul.textContent = "";
+                    break;
+                default:
+                    para.textContent= "";
+
+            }
+
+        }
+
+        select.value = "January";
+        createCalender("January");
+
+
+        // script from mdn
+        //const select = document.querySelector("select");
+        //const list = document.querySelector("ul");
+        //const h1 = document.querySelector("h1");
+
+        //select.addEventListener("change", () => {
+        //const choice = select.value;
+        //createCalendar(choice);
+        //});
+
+        //function createCalendar(month) {
+        //let days = 31;
+
+         // ADD CONDITIONAL HERE
+
+        // list.textContent = "";
+        // h1.textContent = month;
+        //for (let i = 1; i <= days; i++) {
+        //const listItem = document.createElement("li");
+        //listItem.textContent = i;
+        //list.appendChild(listItem);
+        // }
+        //}
+
+        //select.value = "January";
+        //createCalendar("January");
+
+
+        
+
+    </script>
+    
+</body>
+</html>

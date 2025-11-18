@@ -16,16 +16,37 @@ h1{
     font-size: larger;
     font-weight: 900;
     list-style-type: none;
+    justify-content: flex-end;
 }
+
+.topas{
+    background-color: blanchedalmond;
+}
+
 a:hover{
 color: bisque;
 }
 
 .item{
-    flex: auto;
+    flex: 1;
     text-decoration: underline;
     color: rgba(29, 12, 1, 0.911);
+    margin: 0.5rem;
 }
+
+.item, .topas .flex-container .collect{
+    flex: 1;
+    text-decoration: underline;
+    color: rgba(29, 12, 1, 0.911);
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+.topas .flex-container .collect{
+    margin-right: 35rem;
+    align-self: center;
+}
+
 .top{
     color: rgba(97, 41, 4, 0.911);
 }
@@ -39,10 +60,6 @@ color: bisque;
     text-align: center;
     font-size: 1.8rem;
     color: rgba(29, 12, 1, 0.911);
-}
-
-.topas{
-    background-color: blanchedalmond;
 }
 
 #toptee{

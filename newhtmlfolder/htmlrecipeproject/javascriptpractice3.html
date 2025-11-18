@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is a practice for functions</h1>
+    <script>
+        function add7(num){
+            return num + 7; 
+        }
+
+        const result = add7(10)
+        console.log(result);
+
+        function multiply(num1, num2){
+            return num1 * num2
+        }
+
+        const product = multiply( 3,2)
+        console.log(product);
+
+        function capitalise(text){
+            let ap1 = text.toString();
+            let op1 = ap1.at(0);
+            let op2 = op1.toUpperCase();
+            let op3 = text.slice(1)
+            let op4 = op3.toLowerCase();
+            let op5 = op2 + op4;
+            return op5;
+        }
+        const messaged = capitalise("toKUNBor")
+        console.log(messaged);
+
+        function lastletter(param){
+            let sp1 = param.toString();
+            let sp2 = param.at(-1);
+            return sp2;
+        }
+        const outputtedResult =lastletter("sake");
+        console.log(outputtedResult);
+
+        //function sum
+
+        function sum(param1, param2){
+            return param1 + param2
+
+        }
+        const message = sum (3,4);
+        console.log(message);
+
+        // function trippled
+        function trippled (para){
+            return  para * 3
+        }
+        const messageTrippled = trippled (message);
+        console.log(messageTrippled);
+
+        function even(parax){
+            return parax%2 === 0
+        }
+        const messageEven = even(6);
+        console.log (messageEven);
+
+        function sumTrippledEven(parad){
+            // check if number is even
+            if(messageEven){
+                console.log(messageTrippled);
+            } else (console.log(Cancelled));
+            return console.log(message);
+        }
+        const messageSumTrippled = sumTrippledEven(6);
+        console.log(messageSumTrippled);
+
+        //function sumTrippledNum(param1, param2, param3, ... paramn){
+          //  let numas = Number(param1, param2, param3, ... paramn);
+            //numas = ("1","2","3","4","5","6","7","8","9");
+        
+            //let numasArr = [numas];
+            //let evenNum = numasArr%2===0;
+            //let trippledEvenNum = evenNum * 3;
+            //console.log(evenNum);
+
+            //for (let i = 0; i < numasArr.length - 1; i++){
+              //   console.log(i);
+            //}
+
+               //for (nums of numasArr){
+                 //return trippledEvenNum
+                //};
+                //console.log(nums);
+            
+            
+            //total = param1 + param2 + param3  + paramn
+            //return total
+            
+        //}
+        //const mess = sumTrippledNum ("1","2","3","4","5","6","7","8","9");
+        
+       // console.log(mess);
+        //const updatedResultTrippled = sumTrippledNum("1","2","3","4","5","6","7","8","9");
+        //console.log(updatedResultTrippled);
+        //wrong, this code does not behave as intended. it supposed to sum the result of trippledEvenNum 
+
+        
+
+
+        
+    </script>
+</body>
+</html>

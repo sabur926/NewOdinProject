@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>its a new practice page if else statement</p> 
+    <script>
+
+        let hour = 11;
+        let isWeekend = true;
+        let message = "we are closed for business,  chilling at the party and there is mad fun going on at the moment."
+       if (hour <10 || hour >18 || isWeekend){
+        alert ("the office is closed.");
+        console.log(message);
+       }
+       
+       hour =15;
+       let notWeekend = true;
+       let updatedMessage = "we are opened for business as usual and you are welcomed."
+
+       if (10 <= hour || hour >= 18 || notWeekend){
+        alert("the office is opened.");
+        console.log(updatedMessage);
+       }
+
+       if(10 <= hour || hour >= 18 && notWeekend){
+        alert("the office is opened.");
+        console.log(updatedMessage);
+       }
+
+       let name = prompt("please enter your name here");
+       let age = prompt("please kindly enter your age here");
+       let newMessage = "User is an Adult";
+       let allowMessage ="Welcome to our club and enjoy your Nightlife with us here.";
+       let nextNewMessage ="User is not an Adult, no entry." 
+       let updatedNextMessage  = "Access denied, pls go back home."
+
+       if (age >= 18 && age <= 60){
+        console.log(newMessage);
+        alert(`Hello ${name}, ${allowMessage}`);
+       } else if(age < 18){
+        console.log(nextNewMessage);
+        alert(updatedNextMessage);
+    
+       }
+
+       let userName = prompt("please enter your username here:");
+       let messageOk = "userName Valid, now enter password.";
+       let messageOkOne = "my kind of person, almost there!";
+       let messageUpdate ="please enter the correct username";
+       let messageNewUpdate ="Sometimes i forget my Username too, do not worry, please try again!";
+       let noUserName = "Canceled";
+       if (userName === "Admin"){
+            alert(messageOk);
+            console.log(messageOkOne);
+        }else if (!(userName === "Admin")){
+            alert(messageUpdate);
+            console.log(messageNewUpdate);
+        }else(alert(noUserName));
+
+
+       let password = prompt("please enter your password here:");
+       let passMessage = "Welcome";
+       let passMessageOne ="Nice to have you back and enjoy your time here!";
+       let badMessage ="Wrong password";
+       let fairMessage = "please enter the correct password.";
+       let noPassword = "Canceled";
+       
+       if(password === "TheMaster"){
+         alert(passMessage);
+         console.log(passMessageOne);
+        } else if(!(password = "TheMaster")){
+             alert(badMessage);
+             console.log(fairMessage);
+            } else{alert(noPassword)};
+
+
+       
+
+    
+            
+            
+     
+       
+    
+    </script>
+</body>
+</html>
+

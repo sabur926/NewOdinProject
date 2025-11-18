@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+
+        #container{
+            display:flex;
+            border: 4px solid red;
+            margin: 0.5rem;
+            
+            flex-direction: row;
+            align-content: center;
+            column-gap:2rem;
+            row-gap: 2rem;
+            flex-wrap: wrap;
+           
+       
+        }
+
+        #container div{
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            border:2px solid blue;
+            margin: 1rem;
+            padding: 1.25rem;
+            width: 100px;
+            height: 100px;
+            
+            
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>This project is the odinproject sketchpad creating 16 by 16 divs</h1>
+    <div id="container">
+
+    </div>
+    <script>
+        const container = document.querySelector("#container");
+        const content1 = document.createElement("div");
+        content1.classList.add("content1");
+        content1.textContent ="this is the first div";
+        container.appendChild(content1);
+
+
+        //there is a better way to complete this task using the loop which i have tried but something is not working...
+        //let i = "div"
+        //if(i === div){
+            //for (i = "div"; i <= 16; i++);
+            //const content1 = document.createElement("div");
+            //content1.classList.add("content1");
+            //content1.textContent ="this is the first div";
+            //container.appendChild(content1);
+        //}
+        
+        const content2 = document.createElement("div");
+        content2.classList.add("content2");
+        content2.textContent ="this is the second div";
+        container.appendChild(content2);
+        
+        const content3 = document.createElement("div");
+        content3.classList.add("content3");
+        content3.textContent ="this is the third div";
+        container.appendChild(content3);
+
+        const content4 = document.createElement("div");
+        content4.classList.add("content4");
+        content4.textContent ="this is the fourth div";
+        container.appendChild(content4);
+        
+        const content5 = document.createElement("div");
+        content5.classList.add("content5");
+        content5.textContent ="this is the fifth div";
+        container.appendChild(content5);
+        
+        const content6 = document.createElement("div");
+        content6.classList.add("content6");
+        content6.textContent ="this is the sixth div";
+        container.appendChild(content6);
+        
+
+        const content7 = document.createElement("div");
+        content7.classList.add("content7");
+        content7.textContent ="this is the seventh div";
+        container.appendChild(content7);
+        
+        const content8 = document.createElement("div");
+        content8.classList.add("content8");
+        content8.textContent ="this is the eight div";
+        container.appendChild(content8);
+        
+        const content9 = document.createElement("div");
+        content9.classList.add("content9");
+        content9.textContent ="this is the ninth div";
+        container.appendChild(content9);
+
+        const content10 = document.createElement("div");
+        content10.classList.add("content10");
+        content10.textContent ="this is the tenth div";
+        container.appendChild(content10);
+
+        const content11 = document.createElement("div");
+        content11.classList.add("content11");
+        content11.textContent ="this is the eleventh div";
+        container.appendChild(content11);
+
+        const content12 = document.createElement("div");
+        content12.classList.add("content12");
+        content12.textContent ="this is the twelveth div";
+        container.appendChild(content12);
+
+        const content13 = document.createElement("div");
+        content13.classList.add("content13");
+        content13.textContent ="this is the thirteenth div";
+        container.appendChild(content13);
+        
+
+        const content14 = document.createElement("div");
+        content14.classList.add("content14");
+        content14.textContent ="this is the fourteenth div";
+        container.appendChild(content14);
+
+        const content15 = document.createElement("div");
+        content15.classList.add("content15");
+        content15.textContent ="this is the fifteenth div";
+        container.appendChild(content15);
+
+        const content16 = document.createElement("div");
+        content16.classList.add("content16");
+        content16.textContent ="this is the sixteenth div";
+        container.appendChild(content16);
+
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

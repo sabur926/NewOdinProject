@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        practice for switch statement
+    </p>
+    <label for="weather">Select the weather type for today
+    </label>
+    <select name="updates" id="weather">
+        <option value="choice">Make a choice</option>
+        <option value="sunny">Sunny</option>
+        <option value="rainy">Rainy</option>
+        <option value="snowing">Snowing</option>
+        <option value="overcast">Overcast</option>
+    </select>
+    <p></p>
+
+    
+    <script>
+        const select = document.querySelector("select");
+        const para = document.querySelector("p");
+        select.addEventListener("change", setWeather);
+
+        function setWeather(){
+            const choice =select.value;
+
+            switch (choice){
+                case "sunny":
+                para.textContent = "it is nice and sunny outside today, wear shorts! go to the beach, or the park, and get ice cream";
+                break;
+
+                case "rainy":
+                para.textContent = "rain is falling outside, take an umbrella and dont stay out for too long.";
+                break;
+
+                case "snowing":
+                para,textContent = "the snow is coming down, its freezing cold! stay indoors with a cup of hot chocolate or build a snowman.";
+                break;
+
+                case "overcast":
+                para.textContent = "it isnt raining, but the sky is grey and gloomy, i could change any minute hence take a raincoat just to be safe.";
+                break;
+
+                default:
+                    para.textContent ="";
+
+            }
+        }
+
+
+        
+    </script>
+</body>
+</html>
