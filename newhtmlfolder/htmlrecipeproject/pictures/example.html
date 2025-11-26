@@ -10,7 +10,49 @@
         example
     </p>
     <script>
-        console.log(Math.ceil(Math.random() * 5));
+        console.log(Math.floor(Math.random() * 5));
+
+        const rock = 0;
+        const scissors = 1;
+        const paper = 2;
+        let message = "tie Game";
+        let messageWinComp = "Computer wins";
+        let messageWinPlayer = "player wins";
+        
+        // step 2: create the computer choice which generates random number between zero and 2 both inclusive
+        const computerChoice = getComputerChoice();
+        function getComputerChoice(max){ 
+            let result = Math.floor(Math.random() * 3);
+            if (result === 0){
+                return "rock";
+            } else if(result === 1){
+                return "scissors";
+            }else {
+                return "paper";
+            }
+        }
+        console.log(getComputerChoice());
+        
+
+        function getHumanChoice(){
+            let humanChoice = Number(prompt("Please enter a number between zero and two both inclusive"));
+             if (humanChoice === 0){
+                return "rock";
+            } else if(humanChoice === 1){
+                return "scissors";
+            }else if(humanChoice === 2){
+                return "paper";
+            }else{
+                return "you did not enter a number between zero and two!"
+            }      
+        }         
+        console.log(getHumanChoice());
+
+        if (console.log(getComputerChoice()) === console.log(getHumanChoice())){
+
+            console.log("tie match");
+        }
+
     </script>
 </body>
 </html>

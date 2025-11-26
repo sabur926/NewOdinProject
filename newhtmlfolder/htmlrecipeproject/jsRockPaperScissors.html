@@ -10,55 +10,75 @@
         This is the no user interface Rock Paper and Scissors game from Odin Project.
     </p>
     <script>
-        // plan
-        //declare the variables
-        //let rock = 0;
-        //let scissors = 1;
-        //let paper = 2;
+        
+        //step 1; declare the variables
+
+        const rock = 0;
+        const scissors = 1;
+        const paper = 2;
         let message = "tie Game";
         let messageWinComp = "Computer wins";
         let messageWinPlayer = "player wins";
         
-        
-        
-        //create the user choice code 
-        let userChoice = Number(prompt("Please enter a number between zero and two both inclusive "));
-        //create the computer choice code
-        //computer choice generates random number between zero and 2 both inclusive
-        let max = "";
-        let computerChoice = getComputerChoice(max);
-        
-        function getComputerChoice(){
-            return Math.floor(Math.random * 3);
+        // step 2: create the computer choice which generates random number between zero and 2 both inclusive
+        const computerChoice = getComputerChoice();
+        function getComputerChoice(max){ 
+            let result = Math.floor(Math.random() * 3);
+            if (result === 0){
+                return "rock";
+            } else if(result === 1){
+                return "scissors";
+            }else {
+                return "paper";
+            }
         }
-        getComputerChoice();
-        console.log(getComputerChoice(3));
-        //logic planning start with a tie game that is if both userChoice and computerChoice are equal using the if else statement
-        if(userChoice===computerChoice){
-            console.log(mesage);
+        console.log(getComputerChoice());
+        
+        //step 3: create the user choice code 
+        function getHumanChoice(){
+            let humanChoice = Number(prompt("Please enter a number between zero and two both inclusive"));
+             if (humanChoice === 0){
+                return "rock";
+            } else if(humanChoice === 1){
+                return "scissors";
+            }else if(humanChoice === 2){
+                return "paper";
+            }else{
+            }      
+        }         
+        console.log(getHumanChoice());
 
-        }else if(userChoice > computerChoice){
-            console.log(messageWinPlayer);
+        //step 4: declare score variables and logic of the game;rock is greater than scissors, scissors is greater than paper, paper is greater than rock
+        function playRound(param1){
+            //return getHumanChoice() && getComputerChoice();
+            let humanScore = messageWinPlayer;
+            //for(let i = 0; i = humanScore; i++){
+            //humanScore += "";
+                if(getHumanChoice() === rock &&  getComputerChoice() === scissors){
+                return messageWinPlayer;
 
-        }else{
-            console.log(messageWinComp);
+                }else if(getHumanChoice() === scissors && getComputerChoice()=== paper){
+                return messageWinPlayer;
+
+                }else if(getHumanChoice() === paper && getComputerChoice() === rock){
+                return messageWinPlayer;
+
+                }else if (getHumanChoice() === getComputerChoice()){
+                return message;
+
+                }else{
+                return messageWinComp;
+                    //let computerScore ="";
+                    //for(let i = 0; i = computerScore; i++){
+                    //computerScore += messageWinComp;
+                    //}
+                }
+            //}
         }
+        //playRound();
+        console.log(playRound(1));
 
-        // rock is greater than scissors, scissors is greater than paper, paper is greater than rock
-        if(userChoice === rock && computerChoice === scissors){
-            console.log(messageWinPlayer);
-
-        }else if(userChoice === scissors && computerChoice === paper){
-            console.log(messageWinPlayer);
-
-        }else if(userChoice === paper && computerChoice === rock){
-            console.log(messageWinPlayer);
-
-        }else if (userChoice === computerChoice){
-            console.log(message);
-        } else{
-            console.log(messageWinComp);
-        }
+        // at the moment, there are errors; 1. the prompt function for userchoice number comes up more than once. 2. the comparison between the getHumanchoice function and getcomputerchoice function is not accurate.
 
     </script>
 </body>
