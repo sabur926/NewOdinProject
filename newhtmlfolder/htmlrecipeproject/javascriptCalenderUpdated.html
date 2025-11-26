@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updated Calendar</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 2rem;
+            padding: 4px;
+            border: 2px solid black;
+            color: rgb(1, 10, 17);
+            background-color: aqua;
+            /*width: fit-content;
+            height: min-content;*/
+
+        }
+
+        h1,p{
+            text-align: center;
+            border-radius: 1rem;
+            margin: 1rem;
+        }
+
+        .new{
+            display: flex;
+            border: 2px solid red;
+            padding: 2rem;
+            row-gap: 2rem;
+            column-gap: 2rem;
+            width: fit-content;
+            height: fit-content;
+            flex-wrap: wrap;
+        
+        }
+
+        .new #news{
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            border:2px solid rgb(31, 8, 133);
+            padding:2rem;
+            width: 150px;
+            margin: 1rem;
+            background-color: bisque;
+            
+           
+
+        }
+
+    </style>
+</head>
+<body>
+    <label for="calendar">This are the months in a year </label>
+    <select name="myCalendar" id="calendar">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+    </select>
+
+    <h1>
+
+    </h1>
+    <p>
+
+    </p>
+    <ul>
+
+    </ul>
+
+    <script>
+        const select = document.querySelector("select");
+        const ul = document.querySelector("ul");
+        const h1 = document.querySelector("h1");
+        const p = document.querySelector("p");
+        const choice = select.value;
+        
+        select.addEventListener("choice", calenderOptions);
+
+        function calenderOptions(choice){
+            
+            let days = 31;
+            
+            for (let i = 1; i <= days; i++){
+                const li = document.createElement("li");
+                li.textContent = i;
+                li.setAttribute("id","news");
+                //li.style.color ="red";
+                //li.setAttribute("style", "color: yellow;" )
+
+                ul.appendChild(li);
+                h1.textContent = choice;
+                ul.textContent += "\n";
+                ul.classList.add("new");
+                p.textContent = `This is ${choice}, a beautiful new month.`;
+
+                    if(choice === "February"){
+                    days ===29;
+
+                    }else if(choice === "September" || choice === "April"  || choice === "June" || choice === "November"){
+                    days ===30;
+
+                    }else{ days ===31;
+
+                    }
+            }
+        }
+        
+        calenderOptions(choice);
+      
+    </script>
+</body>
+</html>

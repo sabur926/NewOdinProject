@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors1</title>
+</head>
+<body>
+    <p>
+        This is the no user interface Rock Paper and Scissors game from Odin Project.
+    </p>
+    <script>
+        // plan
+        //declare the variables
+        //let rock = 0;
+        //let scissors = 1;
+        //let paper = 2;
+        let message = "tie Game";
+        let messageWinComp = "Computer wins";
+        let messageWinPlayer = "player wins";
+        
+        
+        
+        //create the user choice code 
+        let userChoice = Number(prompt("Please enter a number between zero and two both inclusive "));
+        //create the computer choice code
+        //computer choice generates random number between zero and 2 both inclusive
+        let max = "";
+        let computerChoice = getComputerChoice(max);
+        
+        function getComputerChoice(){
+            return Math.floor(Math.random * 3);
+        }
+        getComputerChoice();
+        console.log(getComputerChoice(3));
+        //logic planning start with a tie game that is if both userChoice and computerChoice are equal using the if else statement
+        if(userChoice===computerChoice){
+            console.log(mesage);
+
+        }else if(userChoice > computerChoice){
+            console.log(messageWinPlayer);
+
+        }else{
+            console.log(messageWinComp);
+        }
+
+        // rock is greater than scissors, scissors is greater than paper, paper is greater than rock
+        if(userChoice === rock && computerChoice === scissors){
+            console.log(messageWinPlayer);
+
+        }else if(userChoice === scissors && computerChoice === paper){
+            console.log(messageWinPlayer);
+
+        }else if(userChoice === paper && computerChoice === rock){
+            console.log(messageWinPlayer);
+
+        }else if (userChoice === computerChoice){
+            console.log(message);
+        } else{
+            console.log(messageWinComp);
+        }
+
+    </script>
+</body>
+</html>
