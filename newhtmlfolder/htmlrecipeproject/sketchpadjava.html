@@ -38,15 +38,25 @@
             border: 2px solid red;
 
         }
-
+        
         .btn{
             background-color: blue;
             border-radius: 20px;
             color: white;
             font-size: 1.25rem;
-
-
         }
+
+        .btn:hover{
+            background-color: purple;
+            color: aqua;
+        }
+
+        .new:hover{
+            background-color: blue;
+            color: red;
+            
+        }
+
     </style>
 </head>
 <body>
@@ -65,42 +75,75 @@
     <script>
         const container = document.querySelector("#container");
         const content = document.querySelector(".content");
+        //mouseover effect on the div content
+        //content.addEventListener("mouseover", mouseChangeColor);
+        
+        //function mouseChangeColor(param){
+          //return  content.style.cssText = "color:red; background: blue;";
+        //}
+        //mouseChangeColor;
+
+
+        //content.addEventListener("mouseout", mouseChangeOutColor);
+        
+        //function mouseChangeOutColor(param){
+          //return  content.style.cssText = "color: yellow; background: green; ";
+        //}
+        //mouseChangeOutColor;
+        
         const btn = document.querySelector(".btn");
         
        
         
                 
          
-        let divNum = 257;
-        for (let i = 1; i < divNum; i++){
-            const div = document.createElement("div");
-            div.classList.add("new");
-            div.textContent = "one of the 256 divs";
-            container.appendChild(div);   
-        }
+        //let divNum = 257;
+        //for (let i = 1; i < divNum; i++){
+          //  const div = document.createElement("div");
+            //div.classList.add("new");
+            //div.textContent = "one of the 256 divs";
+            //container.appendChild(div);   
+        //}
 
-        btn.addEventListener("click", gridSize);
-
+        
         function gridSize(param){
-                let response = Number(prompt("What Grid size do you want? Please enter your grid size for example: a 64 give a 64 x 64 grid. maximum to 100"))
-                if(response >= 100){
-                  console.log("number is too large, please enter a number lower than 100");
-
-                }else {
-                    console.log("number is acceptable, grid size of choice loading");
-                }
-                return response;
-                
-                let divNumNew = gridSize();
-                for (let i = 1; i < divNumNew; i++){
+                let response = Number(prompt("Please enter your grid size to a maximum of 100"))
+                if(response <= 100){
+                  console.log("number is acceptable, grid size of choice loading");
+                  let updResponse = response * response;
+                  let divNumNew = updResponse;
+                    for (let i = 1; i < divNumNew; i++){
                     const div = document.createElement("div");
                     div.classList.add("new");
                     div.textContent = "one of the user prompt divs numbers";
                     container.appendChild(div);
+                    }
+                  
+                }else {
+                    console.log("number is too large, please enter a number lower than 100");
+                    response = Number(prompt("Now Kindly  enter a number less than or equal to 100"))
+                        if(response <= 100){
+                         console.log("number is acceptable, grid size of choice loading");
+                            let updResponse = response * response;
+                            let divNumNew = updResponse;
+                            for (let i = 1; i < divNumNew; i++){
+                            const div = document.createElement("div");
+                            div.classList.add("new");
+                            div.textContent = "one of the user prompt divs numbers";
+                            container.appendChild(div);
+                            }
+
+                        }
+                
+               
                 }
+                
+                    
         }
         gridSize();
-        //console.log(gridSize());
+        btn.addEventListener("click", gridSize);
+
+       
 
 
 
