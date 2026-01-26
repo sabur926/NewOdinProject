@@ -48,10 +48,38 @@
         }         
         console.log(getHumanChoice());
 
-        if (console.log(getComputerChoice()) === console.log(getHumanChoice())){
+        switch (!(getHumanChoice() === getComputerChoice())){
+                case getHumanChoice() === rock &&  getComputerChoice() === scissors:
+                messageWinPlayer  
+                break;
+                
+                case getHumanChoice() === scissors && getComputerChoice()=== paper:
+                messageWinPlayer
+                break;
 
-            console.log("tie match");
-        }
+                case getHumanChoice() === paper && getComputerChoice() === rock:
+                messageWinPlayer
+                break;
+
+                case getHumanChoice() === scissors && getComputerChoice()=== rock:
+                messageWinComp
+                break;
+
+                case getHumanChoice() === paper && getComputerChoice() === scissors:
+                messageWinComp
+                break;
+
+                case getHumanChoice() === rock &&  getComputerChoice() === paper:
+                messageWinComp  
+                break;
+
+                default:getHumanChoice() === getComputerChoice()
+                message
+                break;
+
+         }
+
+        
 
     </script>
 </body>

@@ -44,6 +44,7 @@
             }else if(humanChoice === 2){
                 return "paper";
             }else{
+                return "you did not enter a number between zero and two!"
             }      
         }         
         console.log(getHumanChoice());
@@ -74,7 +75,36 @@
                     //}
                 }
             //}
-        }
+        } // switch (!(getHumanChoice() === getComputerChoice())){
+            //    case getHumanChoice() === rock &&  getComputerChoice() === scissors:
+              // messageWinPlayer  
+                //break;
+                
+                //case getHumanChoice() === scissors && getComputerChoice()=== paper:
+                //messageWinPlayer
+                //break;
+
+                //case getHumanChoice() === paper && getComputerChoice() === rock:
+                //messageWinPlayer
+                //break;
+
+                //case getHumanChoice() === scissors && getComputerChoice()=== rock:
+                //messageWinComp
+                //break;
+
+                //case getHumanChoice() === paper && getComputerChoice() === scissors:
+                //messageWinComp
+                //break;
+
+                //case getHumanChoice() === rock &&  getComputerChoice() === paper:
+                //messageWinComp  
+                //break;
+
+                //default:getHumanChoice() === getComputerChoice()
+                //message
+                //break;
+
+         //}
         //playRound();
         console.log(playRound(1));
 
